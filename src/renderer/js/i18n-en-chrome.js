@@ -1,0 +1,242 @@
+'use strict';
+
+/** Catálogo en-US do chrome do navegador (index.html, core.js e panels.js). */
+(function (root, factory) {
+  const messages = factory();
+  if (root.IEI18n) root.IEI18n.register(messages);
+})(typeof globalThis !== 'undefined' ? globalThis : this, function () {
+  return {
+    /* Barra de título, abas e controles da janela */
+    Guias: 'Tabs',
+    'Nova guia (Ctrl+T)': 'New tab (Ctrl+T)',
+    Minimizar: 'Minimize',
+    Maximizar: 'Maximize',
+    Restaurar: 'Restore',
+    'Voltar (Alt+←)': 'Back (Alt+←)',
+    'Avançar (Alt+→)': 'Forward (Alt+→)',
+    'Atualizar (F5)': 'Refresh (F5)',
+    'Página inicial (Alt+Home)': 'Home page (Alt+Home)',
+    'Fechar guia': 'Close tab',
+    'Fechar outras guias': 'Close other tabs',
+    'Duplicar guia': 'Duplicate tab',
+    'Reabrir guia fechada': 'Reopen closed tab',
+    'Nova janela InPrivate': 'New InPrivate window',
+    'Nenhuma guia fechada': 'No closed tabs',
+    'Não há guias recentes para reabrir.': 'There are no recent tabs to reopen.',
+
+    /* Barra de ferramentas e barra de endereços */
+    'Informações do site': 'Site information',
+    'Informações indisponíveis': 'Site information unavailable',
+    'Tente novamente.': 'Try again.',
+    'Pesquisar ou digitar um endereço da Web': 'Search or enter a web address',
+    'Modo de Exibição de Compatibilidade': 'Compatibility View',
+    'Modo de Compatibilidade': 'Compatibility View',
+    'Modo de Compatibilidade ativado': 'Compatibility View turned on',
+    'Modo de Compatibilidade desativado': 'Compatibility View turned off',
+    'Modo de Compatibilidade ativado — clique para desativar': 'Compatibility View is on — click to turn it off',
+    'Abra um site para ativar este modo.': 'Open a website to turn on this mode.',
+    '{host} agora é renderizado com o identificador do Internet Explorer 11.':
+      '{host} is now rendered with the Internet Explorer 11 user agent.',
+    '{host} voltou a usar o mecanismo moderno do Chromium.': '{host} is using the modern Chromium engine again.',
+    Ir: 'Go',
+    'Ir para o endereço': 'Go to address',
+    'Adicionar aos favoritos': 'Add to favorites',
+    'Adicionar aos favoritos (Ctrl+D)': 'Add to favorites (Ctrl+D)',
+    'Remover dos favoritos': 'Remove from favorites',
+    'Ferramentas e Opções da Internet': 'Tools and Internet Options',
+    'Feeds (Alt+J)': 'Feeds (Alt+J)',
+    'Feeds disponíveis ({count})': 'Feeds available ({count})',
+    'Todos os favoritos': 'All favorites',
+    Favorito: 'Favorite',
+    Pesquisa: 'Search',
+    'Pesquisar por': 'Search for',
+
+    /* Sugestões e menus */
+    'Abrir link em nova guia': 'Open link in new tab',
+    'Abrir link em InPrivate': 'Open link in InPrivate',
+    'Copiar link': 'Copy link',
+    'Copiar texto do link': 'Copy link text',
+    Copiar: 'Copy',
+    Recortar: 'Cut',
+    Colar: 'Paste',
+    'Selecionar tudo': 'Select all',
+    'Exibir código-fonte': 'View source',
+    'Inspecionar elemento': 'Inspect element',
+    Imprimir: 'Print',
+    Zoom: 'Zoom',
+    'Parar (Esc)': 'Stop (Esc)',
+    'Localizar na página': 'Find on page',
+    Sobre: 'About',
+    'Sobre o IE Neo': 'About IE Neo',
+    'Versão {version} · Chromium {chromium}': 'Version {version} · Chromium {chromium}',
+    'Modo Protegido: ativado': 'Protected Mode: On',
+    'Zoom da página': 'Page zoom',
+    Redefinir: 'Reset',
+    'Nível de zoom': 'Zoom level',
+    'Nível da zona': 'Zone level',
+    'Zona de segurança: {zone} — nível {level}': 'Security zone: {zone} — level {level}',
+    'Modo Protegido: {state}': 'Protected Mode: {state}',
+    'Conexão segura': 'Secure connection',
+    'Conexão não segura': 'Insecure connection',
+    'Cookies armazenados': 'Stored cookies',
+    Cookies: 'Cookies',
+    Certificados: 'Certificates',
+    Mecanismo: 'Engine',
+    'Trident 7 (compatibilidade)': 'Trident 7 (compatibility)',
+
+    /* Sobre */
+    'O clássico, reconstruído para os dias de hoje.': 'The classic, rebuilt for today.',
+    Versão: 'Version',
+    Desenvolvedor: 'Developer',
+    'Página do projeto': 'Project page',
+    Identificação: 'User agent',
+    'Navegador padrão': 'Default browser',
+    'Não — configure em Opções da Internet › Programas': 'No — set it in Internet Options › Programs',
+    Preferências: 'Preferences',
+    'Zona atual': 'Current zone',
+    'Projeto conceitual e educacional. Não é afiliado, patrocinado ou endossado pela Microsoft Corporation. “Internet Explorer”, “Windows” e marcas relacionadas pertencem aos seus respectivos proprietários. Este navegador usa o Chromium de código aberto e não inclui o antigo mecanismo Trident.':
+      'A conceptual, educational project. Not affiliated with, sponsored by, or endorsed by Microsoft Corporation. “Internet Explorer”, “Windows”, and related marks belong to their respective owners. This browser uses open-source Chromium and does not include the legacy Trident engine.',
+
+    /* Favoritos */
+    Nome: 'Name',
+    Pasta: 'Folder',
+    'Guarde esta página na Barra de Favoritos para acessá-la rapidamente.':
+      'Keep this page on the Favorites bar so you can get back to it quickly.',
+    'Adicionado aos favoritos': 'Added to favorites',
+    'Removido dos favoritos': 'Removed from favorites',
+    'Remover favorito': 'Remove favorite',
+    'Não é possível favoritar esta página': 'Can’t add this page to favorites',
+    'Abra um site http ou https primeiro.': 'Open an http or https website first.',
+
+    /* Painel de permissões */
+    'Permissão do site': 'Site permission',
+    deseja: 'wants to',
+    'usar sua câmera e seu microfone': 'use your camera and microphone',
+    'usar {permission}': 'use {permission}',
+    'Zona {zone}': '{zone} zone',
+    'Zona Internet': 'Internet zone',
+    'Lembrar minha escolha para este tipo de permissão': 'Remember my choice for this type of permission',
+    'Você pode alterar isso depois em Opções da Internet › Privacidade.':
+      'You can change this later in Internet Options › Privacy.',
+
+    /* Central de navegação */
+    'Central de navegação': 'Navigation hub',
+    'Revise, pesquise e gerencie sua navegação recente.': 'Review, search, and manage your recent browsing.',
+    'Revise, pesquise e gerencie sua navegação.': 'Review, search, and manage your browsing.',
+    'Pesquisar no histórico': 'Search history',
+    'Limpar tudo': 'Clear all',
+    'Seus sites preferidos, sempre a um clique.': 'Your favorite sites, one click away.',
+    'Pesquisar nos favoritos': 'Search favorites',
+    'Adicionar favorito': 'Add favorite',
+    'Acompanhe e gerencie os arquivos baixados.': 'Track and manage downloaded files.',
+    'Pesquisar downloads': 'Search downloads',
+    'Abrir pasta': 'Open folder',
+    '{count} entrada · mantida por {days} dias': '{count} entry · kept for {days} days',
+    '{count} entradas · mantidas por {days} dias': '{count} entries · kept for {days} days',
+    '{count} favorito salvo': '{count} saved favorite',
+    '{count} favoritos salvos': '{count} saved favorites',
+    '{count} arquivo nesta lista': '{count} file in this list',
+    '{count} arquivos nesta lista': '{count} files in this list',
+    '{count} item': '{count} item',
+    '{count} itens': '{count} items',
+    'Nenhum resultado': 'No results',
+    'Tente outro termo de pesquisa.': 'Try a different search term.',
+    'Nenhum histórico': 'No history',
+    'As páginas que você visitar aparecerão aqui.': 'Pages you visit will appear here.',
+    'Nenhum favorito': 'No favorites',
+    'Use o botão de estrela na barra de endereços para salvar uma página.':
+      'Use the star button in the address bar to save a page.',
+    'Nenhum download': 'No downloads',
+    'Os arquivos baixados pelo navegador aparecerão aqui.': 'Files you download will appear here.',
+    'Excluir esta entrada': 'Delete this entry',
+    Baixando: 'Downloading',
+    Cancelado: 'Canceled',
+    '{received} of {total}': '{received} of {total}',
+    'Mostrar na pasta': 'Show in folder',
+    'Excluir histórico de navegação?': 'Delete browsing history?',
+    'Esta ação remove todas as entradas de histórico deste navegador. Favoritos e downloads serão preservados.':
+      'This removes all history entries from this browser. Favorites and downloads are kept.',
+    'Excluir histórico': 'Delete history',
+    'Histórico excluído': 'History deleted',
+    'Todas as entradas foram removidas.': 'All entries were removed.',
+    'Favorito removido': 'Favorite removed',
+    'Pasta de downloads indisponível': 'Downloads folder unavailable',
+    'Abra um download primeiro ou defina uma pasta nas Opções da Internet.':
+      'Open a download first or set a folder in Internet Options.',
+
+    /* Leitor de feeds */
+    'Nenhum feed detectado': 'No feeds detected',
+    'Nenhum feed detectado nesta página': 'No feeds detected on this page',
+    'Esta página não anuncia feeds RSS ou Atom. Visite um site de notícias para experimentar.':
+      'This page doesn’t advertise RSS or Atom feeds. Visit a news site to try it.',
+    '{count} feed disponível em {host}': '{count} feed available on {host}',
+    '{count} feeds disponíveis em {host}': '{count} feeds available on {host}',
+    'esta página': 'this page',
+    Feed: 'Feed',
+    'Feed da página': 'Page feed',
+    'Carregando feed…': 'Loading feed…',
+    'Não foi possível carregar o feed.': 'Couldn’t load the feed.',
+    'Feed inválido: {message}': 'Invalid feed: {message}',
+    'XML malformado': 'Malformed XML',
+    'Documento vazio': 'Empty document',
+    '(sem título)': '(untitled)',
+    'Este feed não contém itens.': 'This feed has no items.',
+
+    /* Bandeja de downloads */
+    'Preparando…': 'Preparing…',
+    'Ver downloads': 'View downloads',
+    '{bytes} — download concluído': '{bytes} — download complete',
+    '{received} of {total} ({percent}%)': '{received} of {total} ({percent}%)',
+    'Download pausado': 'Download paused',
+    'Download interrompido': 'Download interrupted',
+
+    /* Barra de localização */
+    'Ocorrência anterior (Shift+Enter)': 'Previous match (Shift+Enter)',
+    Anterior: 'Previous',
+    'Próxima ocorrência (Enter)': 'Next match (Enter)',
+    Próxima: 'Next',
+    'Fechar (Esc)': 'Close (Esc)',
+    'Fechar feeds': 'Close feeds',
+    'Fechar aviso': 'Close notification',
+    '0 de 0': '0 of 0',
+    '{current} de {total}': '{current} of {total}',
+
+    /* Páginas de erro e sites restritos */
+    'Falha de rede': 'Network error',
+    'O processo da página foi encerrado inesperadamente.': 'The page process ended unexpectedly.',
+    'Esta página não pode ser exibida': 'This page can’t be displayed',
+    'O IE Neo encontrou um problema ao carregar': 'IE Neo ran into a problem loading',
+    'Código: {code}': 'Code: {code}',
+    'Atualizar página': 'Refresh page',
+    'Diagnosticar problemas de conexão': 'Diagnose connection problems',
+    'Se o endereço estiver correto, o site poderá estar temporariamente indisponível. Verifique sua conexão e as configurações de proxy em':
+      'If the address is correct, the site may be temporarily unavailable. Check your connection and proxy settings in',
+    'Executando diagnóstico de conexão…': 'Running connection diagnostics…',
+    'Não foi possível executar o diagnóstico: {message}': 'Couldn’t run diagnostics: {message}',
+    'Diagnóstico de conexão': 'Connection diagnostics',
+    'Abrir Opções da Internet': 'Open Internet Options',
+    'Destino: {target}': 'Target: {target}',
+    'Zona Sites restritos': 'Restricted sites zone',
+    'O Modo Protegido bloqueou este site': 'Protected Mode blocked this site',
+    'está na zona': 'is in the',
+    'Por padrão, o IE Neo impede o carregamento de páginas dessa zona para proteger seu computador.':
+      'By default, IE Neo blocks pages in this zone to help protect your computer.',
+    'Continuar mesmo assim': 'Continue anyway',
+    'Gerenciar sites restritos': 'Manage restricted sites',
+    'Você também pode adicionar este site à zona': 'You can also add this site to the',
+    'nas Opções da Internet. A proteção do Modo Protegido continuará ativa.':
+      'zone in Internet Options. Protected Mode protection stays on.',
+
+    /* Infobars e notificações */
+    'Você está navegando em InPrivate. O IE Neo não salvará histórico, cookies nem dados de formulário desta sessão.':
+      'You’re browsing in InPrivate. IE Neo won’t save history, cookies, or form data from this session.',
+    'Saiba mais': 'Learn more',
+    'O bloqueador de pop-ups do IE Neo bloqueou um pop-up de {host}.':
+      'IE Neo blocked a pop-up from {host}.',
+    'este site': 'this site',
+    'Abrir pop-up': 'Open pop-up',
+    'Identificador do navegador atualizado': 'Browser identification updated',
+    'A nova identificação será usada nas próximas navegações.':
+      'The new identification will be used for future navigations.',
+  };
+});

@@ -1,0 +1,82 @@
+{
+  "name": "ie-neo",
+  "productName": "IE Neo",
+  "version": "1.0.0",
+  "description": "IE Neo — o clássico, reconstruído sobre Chromium.",
+  "main": "src/main/main.js",
+  "author": {
+    "name": "FGOMESX",
+    "url": "https://github.com/fgomesx"
+  },
+  "homepage": "https://github.com/fgomesx/ie-neo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fgomesx/ie-neo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fgomesx/ie-neo/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "electron .",
+    "start:debug": "electron . --dev",
+    "shot": "node scripts/screenshot.js",
+    "smoke": "node scripts/smoke.js",
+    "icon": "python scripts/make-icon.py",
+    "dist": "electron-builder --win nsis",
+    "pack": "electron-builder --dir"
+  },
+  "devDependencies": {
+    "electron": "^45.0.0",
+    "electron-builder": "^26.18.0",
+    "playwright-core": "^1.56.0"
+  },
+  "build": {
+    "appId": "com.fgomesx.ieneo",
+    "productName": "IE Neo",
+    "copyright": "Copyright © 2026 FGOMESX",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "src/**/*",
+      "assets/icon.png",
+      "LICENSE",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.ico",
+      "artifactName": "IE-Neo-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "IE Neo",
+      "runAfterFinish": true,
+      "installerLanguages": [
+        "en_US",
+        "pt_BR"
+      ],
+      "displayLanguageSelector": true,
+      "language": "1033",
+      "include": "build/installer.nsh",
+      "deleteAppDataOnUninstall": false
+    }
+  }
+}
